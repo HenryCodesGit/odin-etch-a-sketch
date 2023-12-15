@@ -18,6 +18,21 @@ function makeRows(size){
             currRow.appendChild(currCell);
     
             currCell.addEventListener("mouseenter", ()=>{darkenCell(currCell);});
+
+            currCell.addEventListener("mousedown", (e) => {
+                e.preventDefault();
+            })
+            currCell.addEventListener("mousemove", (e) => {
+                e.preventDefault();
+            })
+
+            currCell.addEventListener("touchstart", (e) => {
+                e.preventDefault();
+            })
+
+            currCell.addEventListener("touchmove", (e) => {
+                e.preventDefault();
+            })
         }
     
         CONTAINER.appendChild(currRow);
